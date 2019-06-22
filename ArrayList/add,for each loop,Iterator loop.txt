@@ -1,0 +1,27 @@
+
+package basicjavaa;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Arraylist2 {
+    public static void main(String[]aef){
+        ArrayList<String> lis=new ArrayList<String>();
+        lis.add("mamun");
+        lis.add("sagor");
+        lis.add("munni");
+        lis.add("abed");
+        System.out.println(lis);
+        for(String obj:lis){
+            System.out.println(obj);
+        }
+        Iterator it=lis.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+        
+        
+        
+    }
+    
+}

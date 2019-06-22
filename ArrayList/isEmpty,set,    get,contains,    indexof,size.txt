@@ -1,0 +1,51 @@
+
+package basicjavaa;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class Arraylist2 {
+    public static void main(String[]aef){
+        ArrayList<String> lis=new ArrayList<String>();
+        lis.add("mamun");
+        lis.add("sagor");
+        lis.add("munni");
+        lis.add("abed");
+        
+        System.out.println(lis);
+        
+        for(String obj:lis){
+            System.out.println(obj);
+        }
+        //System.out.println("ANS IS:");
+        
+        Iterator it=lis.iterator();
+        while(it.hasNext()){
+            System.out.println(it.next());
+        }
+        
+        System.out.println(lis.size());
+      
+       
+        boolean bn=lis.isEmpty();
+        System.out.println(bn);
+        
+        boolean a=lis.contains("abed");
+        System.out.println(a);
+        
+        lis.remove(3);
+        System.out.println(lis);
+        
+        System.out.println("before update ="+lis.get(0));
+       lis.set(0, "abdullah");
+       
+        System.out.println("after update="+lis.get(0));
+        System.out.println(lis);
+        
+        System.out.println( lis.indexOf("sagor"));
+        
+        
+        
+    }
+    
+}
